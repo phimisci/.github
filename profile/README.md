@@ -5,8 +5,9 @@ The Magic Manuscript Maker Typesetting Workflow is a collection of open-source t
 - [XML2YAML-OS](https://github.com/phimisci/xml2yaml-os)
 - [DOC2MD-OS](https://github.com/phimisci/doc2md-os)
 - [VerifyBibTeX-OS](https://github.com/phimisci/verifybibtex-os)
+- [TEX2PDF-OS](https://github.com/phimisci/tex2pdf-os)
 
-These tools are channeled through a web application called the "Magic Manuscript Maker", which allows to create user profiles and projects. The web application will be released in the future. However, the individual tools can also be used independently. In the following sections, you can find a short summary of each tool.
+These tools are channeled through a web application called the "Magic Manuscript Maker", which allows to create user profiles and projects. The web application can be found here: [Link](https://github.com/phimisci/mmm-web-app-os). However, the individual tools can also be used independently. In the following sections, you can find a short summary of each tool.
 
 ## Typesetting Container OS
 The Typesetting Container OS is part of the Magic Manuscript Maker Typesetting Workflow and is used to typeset articles in the journal. The Typesetting Container OS heavily relies on [Pandoc](https://pandoc.org/), which does all the heavy lifting. The container uses pandoc to convert markdown files to various outputs such as PDF, HTML, TEX, and JATS. The container can be used via the command line or in a simple web interface. It comes with a default template that can be adjusted to the needs of the journal. The container is available on GitHub: [Typesetting-Container-OS](https://github.com/phimisci/typesetting-container-os).
@@ -19,6 +20,9 @@ DOC2MD-OS is a CLI program that converts DOCX/ODT files to Markdown, which is th
 
 ## VerifyBibTeX-OS
 VerifyBibTeX-OS is a helpful tool that checks the validity of a BibTeX file. In addition, it also checks if the BibTeX file contains all the necessary fields for the Magic Manuscript Maker Typesetting Workflow, such as DOI fields, page numbers, etc. It creates a report that lists all the missing fields and potential errors in the BibTeX file. The repository can be found here: [VerifyBibTeX-OS](https://github.com/phimisci/verifybibtex-os)
+
+## TEX2PDF-OS
+TEX2PDF-OS is a tool for converting LaTeX files into PDF files. It is based on a texlive image and uses xelatex to perform the conversion. The container is integrated into the Magic Manuscript Maker workflow to address layout issues that arise when converting Markdown to PDF using Pandoc. In adherence to the single-source publishing principle, the TEX2PDF-OS container should only be used when layout problems can only be resolved directly in the TeX file. The repository is located [here](https://github.com/phimisci/tex2pdf-os).
 
 ## About
 The Magic Manuscript Maker Typesetting Workflow is developed by Thomas Jurczyk for Philosophy and the Mind Sciences. If you have any questions, ideas,  or want to report bugs, please contact [thomjur](https://github.com/thomjur).
